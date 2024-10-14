@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleToDoListAvalonia", "SimpleToDoListAvalonia\SimpleToDoListAvalonia.csproj", "{AE0E20E8-704F-41EF-8964-8BC0C3DFE898}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleToDoListAvalonia.Desktop", "SimpleToDoListAvalonia.Desktop\SimpleToDoListAvalonia.Desktop.csproj", "{CDD9506C-CF2E-4D68-A08F-7B12353F1678}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE0E20E8-704F-41EF-8964-8BC0C3DFE898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE0E20E8-704F-41EF-8964-8BC0C3DFE898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE0E20E8-704F-41EF-8964-8BC0C3DFE898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE0E20E8-704F-41EF-8964-8BC0C3DFE898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD9506C-CF2E-4D68-A08F-7B12353F1678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD9506C-CF2E-4D68-A08F-7B12353F1678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD9506C-CF2E-4D68-A08F-7B12353F1678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD9506C-CF2E-4D68-A08F-7B12353F1678}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D38465DD-0D99-4904-8DC4-FAE55227B1A0}
+	EndGlobalSection
+EndGlobal
