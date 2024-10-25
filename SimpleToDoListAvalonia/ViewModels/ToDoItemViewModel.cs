@@ -12,10 +12,10 @@ namespace SimpleToDoListAvalonia.ViewModels
     public partial class ToDoItemViewModel : ViewModelBase
     {
         [ObservableProperty]
-        private bool _isChecked;
+        public bool _isChecked;
 
         [ObservableProperty]
-        private string? _content;
+        public string? _content;
 
         public ToDoItemViewModel() 
         { 
@@ -35,6 +35,11 @@ namespace SimpleToDoListAvalonia.ViewModels
                 IsChecked = this.IsChecked,
                 Content = this.Content
             };
+        }
+
+        public override string ToString()
+        {
+            return string.Empty;
         }
 
     }

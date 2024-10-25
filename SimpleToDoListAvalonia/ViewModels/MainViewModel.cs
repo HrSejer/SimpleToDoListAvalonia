@@ -1,6 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 
 namespace SimpleToDoListAvalonia.ViewModels;
 
@@ -13,12 +15,17 @@ public partial class MainViewModel : ViewModelBase
     private string? _newItemContent;
 
     private bool CanAddItem() => !string.IsNullOrWhiteSpace(NewItemContent);
-
+    
     [RelayCommand (CanExecute = nameof(CanAddItem))]
     private void AddItem()
     {
-        ToDoItems.Add(new ToDoItemViewModel() { Content = NewItemContent});
+        var newItem = new ToDoItemViewModel()
+        {
+            Content = NewItemContent,
+            IsChecked = false
+        };
 
+        ToDoItems.Add(newItem);
         NewItemContent = null;
     }
 

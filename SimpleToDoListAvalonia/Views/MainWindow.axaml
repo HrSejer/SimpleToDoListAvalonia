@@ -13,7 +13,7 @@
 	<Grid RowDefinitions="Auto, *, Auto"
 		  x:Name="Root">
 		
-		<TextBlock Text="ToDo-List"/>
+		<TextBlock Classes="h1" Text="ToDo-List"/>
 
 		<ScrollViewer Grid.Row="1">
 			<ItemsControl ItemsSource="{Binding ToDoItems}">
@@ -32,8 +32,9 @@
 			<TextBox.KeyBindings>
 				<KeyBinding Command="{Binding AddItemCommand}" Gesture="Enter"/>
 			</TextBox.KeyBindings>
+			
 		</TextBox>
-					<ItemsControl ItemsSource="{Binding ToDoItems}">
+			<ItemsControl ItemsSource="{Binding ToDoItems}" Grid.Row="1">
 				<ItemsControl.ItemTemplate>
 					<DataTemplate DataType="vm:ToDoItemViewModel">
 						<Grid ColumnDefinitions="*, Auto">
